@@ -143,7 +143,6 @@ ul {
   text-align: center;
 
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -188,10 +187,13 @@ ul {
 }
 /* Секция преимуществ */
 .frame {
-  padding: 25px 100px;
+  display: flex;
+  height: 120px;
   margin-bottom: 30px;
   background: var(--light-background-color);
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 .benefit {
   padding-bottom: 0;
@@ -241,7 +243,6 @@ img {
 /* Наша команда */
 .social-network-list {
   display: flex;
-  padding: 0 32px 30px 32px;
 }
 
 .link-network {
@@ -267,7 +268,7 @@ img {
   background-color: var(--accent-color);
 }
 .member {
-  padding: 30px 20px 16px 20px;
+  padding: 30px 32px;
 }
 .team {
   background-color: var(--light-background-color);
@@ -297,6 +298,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
 /* Постоянные клиенты */
 .clients-list {
@@ -434,15 +436,19 @@ address {
   margin-left: -30px;
   margin-bottom: -30px;
 }
-.projects-list .item {
+.projects-list .project-item {
   width: 370px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.projects-list .item:hover,
-.projects-list .item:focus {
+.project-link {
+  display: block;
+}
+.project-link:focus,
+.project-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .projects-list a {
